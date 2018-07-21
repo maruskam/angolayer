@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
+import { MapService } from './map/map.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { MapComponent } from './map/map.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

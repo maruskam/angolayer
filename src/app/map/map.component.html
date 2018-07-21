@@ -1,2 +1,19 @@
 <div id="map" class="map"></div>
-test
+<hr>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Layer 
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a  [ngClass]="{'dropdown-item': true,  'active':layers['bing'].active}" (click)="addLayer('bing')" >Bing Map</a>
+                            <a  [ngClass]="{'dropdown-item': true,  'active':layers['arcgis'].active}" (click)="addLayer('arcgis')" >ArcGis</a>
+                        </div>
+                    </div>                    
+            </div>
+        </div>
+    </div>
+    
